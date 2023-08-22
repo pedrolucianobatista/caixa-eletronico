@@ -1,0 +1,39 @@
+@charset "uft-8";
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+.corpo {
+    width: 960px;
+    margin: auto;
+    columns: 2;
+}
+
+.conteudo {
+    display: table;
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+}
+
+.texto {
+    margin-left: 35px;
+    display: table-cell;
+    float: right;
+    width: 300px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: auto;
+}
