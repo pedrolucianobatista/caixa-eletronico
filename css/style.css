@@ -1,39 +1,39 @@
 @charset "uft-8";
 
-h1 {
+:root {
+    
+    --cor1: #4D5382;
+    --cor2: #8FBFE0;
+    --cor3: #F5CAC3;
+    
+}
+
+* {
     text-align: center;
+    margin: 0%;
 }
 
 body {
-    background-color: #f1f1f1;
-    color: #555;
+    background-image: linear-gradient(var(--cor2) to var(--cor1));
 }
 
-.corpo {
-    width: 960px;
+header {
+    background-color: green;
+    width: 800px;
     margin: auto;
-    columns: 2;
+    padding: 15px;
+    border-radius: 5px 5px 0px 0px;
 }
 
-.conteudo {
-    display: table;
+main {
+    background-color: yellow;
+    padding: 15px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 0px 0px 5px 5px;
 }
 
-.imagem {
-    display: table-cell;
-    float: left;
-}
-
-.texto {
-    margin-left: 35px;
-    display: table-cell;
-    float: right;
-    width: 300px;
-    margin-top: -20px;
-    margin-left: 20px;
-}
-
-footer {
-    text-align: center;
-    margin-bottom: auto;
+h4, #resposta {
+    padding: 15px;
 }
