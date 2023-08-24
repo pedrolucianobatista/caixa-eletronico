@@ -14,11 +14,11 @@
 }
 
 body {
-    background: linear-gradient(to var(--cor2), var(--cor1)); 
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2)); 
 }
 
 header {
-    background-color: var(--cor1);
+    background-color: green;
     width: 800px;
     margin: auto;
     padding: 15px;

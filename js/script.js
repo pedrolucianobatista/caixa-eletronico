@@ -11,7 +11,7 @@ function calcular() {
     let resto100 = Math.floor(valor / 100)
 
     if (valor == '' || isNaN(valor)) {
-        alert('Digite um valor por favor')
+        alert('Digite um valor válido por favor')
         let valor = document.querySelector('#inValor').value = ''
         inValor.focus()
         return;
