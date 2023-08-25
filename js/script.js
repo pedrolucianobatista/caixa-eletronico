@@ -7,6 +7,7 @@ function calcular() {
     let mostrar100 = document.querySelector('#Mostrar100')
     let mostrar50 = document.querySelector('#Mostrar50')
     let mostrar10 = document.querySelector('#Mostrar10')
+    let mostrar5 = document.querySelector('#Mostrar5')
 
     let resto100 = Math.floor(valor / 100)
 
@@ -15,6 +16,15 @@ function calcular() {
         let valor = document.querySelector('#inValor').value = ''
         inValor.focus()
         return;
+    } 
+
+    if (valor % 5 != 0) {
+
+        alert('Digite outro valor, pois não temos notas suficientes')
+        let valor = document.querySelector('#inValor').value = ''
+        inValor.focus()
+        return;
+
     }
 
     if (resto100 >= 1) {
@@ -36,13 +46,13 @@ function calcular() {
     }
     
     valor = valor - (resto10 * 10)
+    let resto5 = Math.floor(valor / 5)
 
-    if (valor != 0) {
-        resultado.innerHTML = `Infelizmente não possuímos notas suficientes`
-        let mostrar100 = document.querySelector('#Mostrar100').textContent = ''
-        let mostrar50 = document.querySelector('#Mostrar50').textContent = ''
-        let mostrar10 = document.querySelector('#Mostrar10').textContent = ''
-    } 
+    if (resto5 >= 1) {
+        mostrar5.textContent = `Notas de 5R$: ${resto5}`
+    }
+
+    valor = valor - (resto5 * 5)
 
 }
 
