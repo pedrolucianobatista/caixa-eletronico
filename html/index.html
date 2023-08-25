@@ -21,14 +21,21 @@
         <section>
 
                 <p>
-                    Seja bem-vindo(a) ao saque instântaneo
+                    Qual valor você deseja sacar? (R$)*
                 </p>
 
                 <p>
-                    Digite o valor a ser sacado:
+                    
+                    <input type="number" name="inValor" id="inValor">
+
                 </p>
 
-                <input type="number" name="inValor" id="inValor">
+                <p>
+
+                    *Notas disponíveis: R$100, R$50, R$10 e R$5 
+
+                </p>
+
                 <p>
                     <input type="button" value="Sacar" id="btMostrar">
                 </p>
@@ -37,12 +44,26 @@
 
         <section>
 
-            <h3 id="resposta"></h3>
+            <h1 id="outExibir">Saque de R$0,00 realizado</h1>
 
-            <h4 id="Mostrar100"></h4>
-            <h4 id="Mostrar50"></h4>
+            <p>
+
+                O caixa eletrônico vai te entregaras seguintes notas: 
+
+            </p>
+
+            <ul>
+
+                <li><img src="../imagens/100-reais.jpg" alt="Nota de 100"> x <span id="Mostrar100">0</span></li>
+                <li><img src="../imagens/50-reais.jpg" alt="Nota de 50"> x <span>0</span></li>
+                <li><img src="../imagens/10-reais.jpg" alt="Notas de 10"> x <span>0</span></li>
+                <li><img src="../imagens/5-reais.jpg" alt="Notas de 5"> x <span>0</span></li>
+
+            </ul>
+
+            <!-- <h4 id="Mostrar50"></h4>
             <h4 id="Mostrar10"></h4>
-            <h4 id="Mostrar5"></h4>
+            <h4 id="Mostrar5"></h4> -->
 
         </section>
         

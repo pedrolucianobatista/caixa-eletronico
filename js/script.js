@@ -3,7 +3,7 @@
 function calcular() {
 
     let valor = Number(document.querySelector('#inValor').value)
-    let resultado = document.querySelector('#resposta')
+    let exibir = document.querySelector('#outExibir')
     let mostrar100 = document.querySelector('#Mostrar100')
     let mostrar50 = document.querySelector('#Mostrar50')
     let mostrar10 = document.querySelector('#Mostrar10')
@@ -27,8 +27,10 @@ function calcular() {
 
     }
 
+    exibir.textContent = `Saque de R$ ${valor} realizado`
+
     if (resto100 >= 1) {
-        mostrar100.textContent = `Notas de 100R$: ${resto100}`
+        mostrar100.textContent = `${resto100}`
     } 
 
     valor = valor - (resto100 * 100)
