@@ -9,62 +9,49 @@
 </head>    
 
 <body>
-
-    <header>
-
-        <h1>CAIXA ELETRÔNICO</h1>
-
-    </header>
     
     <main>
 
-        <section>
+        <section class="first">
 
-                <p>
-                    Qual valor você deseja sacar? (R$)*
-                </p>
+                <h1>CAIXA ELETRÔNICO</h1>
 
-                <p>
+                <div id="conteudo">
+                    <span class="especifico">
+                        Qual valor você deseja sacar? (R$)*
+                    </span>
+                    <p>
                     
-                    <input type="number" name="inValor" id="inValor">
-
-                </p>
-
-                <p>
-
-                    *Notas disponíveis: R$100, R$50, R$10 e R$5 
-
-                </p>
-
-                <p>
-                    <input type="button" value="Sacar" id="btMostrar">
-                </p>
+                        <input type="number" name="inValor" id="inValor">
+                    </p>
+                    <p class="paragrafo">
+                        *Notas disponíveis: R$100, R$50, R$10 e R$5
+                    </p>
+                    <p>
+                        <input type="button" value="Sacar" id="btMostrar">
+                    </p>
+                </div>
 
         </section>
 
-        <section>
+        <section class="second">
 
-            <h1 id="outExibir">Saque de R$0,00 realizado</h1>
+            <h2 id="outExibir">Saque de R$0,00 realizado</h2>
 
             <p>
 
-                O caixa eletrônico vai te entregaras seguintes notas: 
+                O caixa eletrônico vai te entregar as seguintes notas: 
 
             </p>
 
             <ul>
 
                 <li><img src="../imagens/100-reais.jpg" alt="Nota de 100"> x <span id="Mostrar100">0</span></li>
-                <li><img src="../imagens/50-reais.jpg" alt="Nota de 50"> x <span>0</span></li>
-                <li><img src="../imagens/10-reais.jpg" alt="Notas de 10"> x <span>0</span></li>
-                <li><img src="../imagens/5-reais.jpg" alt="Notas de 5"> x <span>0</span></li>
-                <!-- Imagens hehe -->
+                <li><img src="../imagens/50-reais.jpg" alt="Nota de 50"> x <span id="Mostrar50">0</span></li>
+                <li><img src="../imagens/10-reais.jpg" alt="Notas de 10"> x <span id="Mostrar10">0</span></li>
+                <li><img src="../imagens/5-reais.jpg" alt="Notas de 5"> x <span id="Mostrar5">0</span></li>
 
             </ul>
-
-            <!-- <h4 id="Mostrar50"></h4>
-            <h4 id="Mostrar10"></h4>
-            <h4 id="Mostrar5"></h4> -->
 
         </section>
         

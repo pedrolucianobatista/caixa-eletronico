@@ -1,2 +1,88 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+.first {
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.especifico {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 35px;
+}
+
+#inValor {
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 15px;
+}
+
+.paragrafo {
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+h1 {
+    color: rgba(255, 0, 0, 0.724);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+#conteudo {
+    border-radius: 10px;
+    width: 400px;
+    height: 180px;
+    background-color: green;
+    margin: auto;
+    padding: 20px;
+}
+
+#btMostrar {
+    background-color: rgba(0, 128, 0, 0.408);
+    text-align: center;
+    margin-top: 25px;
+    width: 258px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.second {
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+}
+
+h2 {
+    color: rgba(255, 0, 0, 0.724);
+    font-weight: bold;
+}
+
+img {
+    width: 130px;
+    padding: 10px;
+}

@@ -37,24 +37,22 @@ function calcular() {
     let resto50 = Math.floor(valor / 50)
 
     if (resto50 >= 1) {
-        mostrar50.textContent = `Notas de 50R$: ${resto50}`
+        mostrar50.textContent = `${resto50}`
     }
 
     valor = valor - (resto50 * 50)
     let resto10 = Math.floor(valor / 10)
 
     if (resto10 >= 1) {
-        mostrar10.textContent = `Notas de 10R$: ${resto10}`
+        mostrar10.textContent = `${resto10}`
     }
     
     valor = valor - (resto10 * 10)
     let resto5 = Math.floor(valor / 5)
 
     if (resto5 >= 1) {
-        mostrar5.textContent = `Notas de 5R$: ${resto5}`
+        mostrar5.textContent = `${resto5}`
     }
-
-    valor = valor - (resto5 * 5)
 
 }
 
