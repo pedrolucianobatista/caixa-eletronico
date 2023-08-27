@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --cor1: #BA1B1D;
+    --cor2: #F24333;
+    --cor3: #efc69b7c;
+}
+
 * {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -9,11 +15,12 @@
 
 body {
     background-color: gray;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
 }
 
 .first {
     border-radius: 10px;
-    width: 500px;
+    width: 350px;
     height: 300px;
     background-color: white;
     margin: auto;
@@ -23,13 +30,13 @@ body {
 
 .especifico {
     background-color: yellow;
+    width: 250px;
     border-radius: 5px;
-    padding: 6px;
-    margin-top: 35px;
+    padding: 5px;
 }
 
 #inValor {
-    width: 280px;
+    width: 255px;
     height: 30px;
     border-radius: 5px;
     padding: 3px;
@@ -42,7 +49,7 @@ body {
 }
 
 h1 {
-    color: rgba(255, 0, 0, 0.724);
+    color: var(--cor2);
     font-size: 2em;
     font-weight: bold;
     padding: 10px 0px;
@@ -50,18 +57,18 @@ h1 {
 
 #conteudo {
     border-radius: 10px;
-    width: 400px;
-    height: 180px;
-    background-color: green;
+    width: 300px;
+    height: 190px;
+    background-color: var(--cor3);
     margin: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 #btMostrar {
-    background-color: rgba(0, 128, 0, 0.408);
+    background-color: green;
     text-align: center;
     margin-top: 25px;
-    width: 258px;
+    width: 255px;
     height: 40px;
     border-radius: 5px;
 }
@@ -78,7 +85,7 @@ h1 {
 }
 
 h2 {
-    color: rgba(255, 0, 0, 0.724);
+    color: var(--cor2);
     font-weight: bold;
 }
 
